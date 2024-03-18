@@ -15,3 +15,16 @@ Launchment :
 Remarque :
 ----------
 - Si vous voulez lancer une autre projet, juste remplacer les sources dans le dossier "app".
+
+Acces dans le conteneur php
+---------------------------
+- Dans la ligne de comande saisir la commande : "docker exec -it <id-conteneur-php> bash"
+avec id-conteneur-php est obtenu à parir de la commande 'docker ps'
+
+ Acces dans le conteneur nginx
+------------------------------
+docker exec -it <id-conteneur-nginx> bash
+
+Access dans le conteneur mysql
+------------------------------
+docker exec -it <id-conteneur-mysql> mysql -u root -p
